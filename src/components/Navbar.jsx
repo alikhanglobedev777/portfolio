@@ -45,7 +45,7 @@ function Navbar() {
 
       {/* Mobile Menu Button */}
       <button
-        className="md:hidden px-3 py-2 rounded-lg bg-white/40 hover:bg-white/60 transition"
+        className="md:hidden px-3 py-2 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold shadow-md hover:opacity-90 transition"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? "✖" : "☰"}
@@ -53,7 +53,7 @@ function Navbar() {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="absolute top-16 right-6 w-48 backdrop-blur-md bg-white/30 rounded-xl shadow-lg border border-white/40 flex flex-col py-3 animate-fade-in">
+        <div className="absolute top-16 right-6 w-48 backdrop-blur-md bg-white/90 rounded-xl shadow-lg border border-white/40 flex flex-col py-3 animate-fade-in">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
