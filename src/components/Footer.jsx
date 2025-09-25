@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
@@ -15,7 +14,7 @@ function Footer() {
     <footer className="backdrop-blur-md bg-white/20 border-t border-white/30">
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
 
-        {/* Left: Logo */}
+        
         <div className="text-center md:text-left">
           <Link
             to="/"
@@ -28,7 +27,7 @@ function Footer() {
           </p>
         </div>
 
-        {/* Center: Links */}
+        
         <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm">
           {navLinks.map((link) => (
             <NavLink
@@ -48,7 +47,7 @@ function Footer() {
           ))}
         </div>
 
-        {/* Right: Copyright */}
+      
         <div className="text-sm text-gray-600 text-center md:text-right">
           © {new Date().getFullYear()} Ali Khan. All rights reserved.
         </div>

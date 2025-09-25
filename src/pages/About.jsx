@@ -1,10 +1,9 @@
-// src/pages/About.jsx
 import React from "react";
 
 function About() {
   return (
     <main className="max-w-4xl mx-auto px-4 md:px-8 py-12">
-      {/* Heading */}
+     
       <h1 className="text-3xl font-bold text-indigo-600">About Me</h1>
       <p className="mt-4 text-gray-700 leading-relaxed">
         Hi, I’m Ali Khan — a passionate full-stack developer specializing in the
@@ -12,7 +11,6 @@ function About() {
         responsive web applications that provide seamless user experiences.
       </p>
 
-      {/* Skills */}
       <section className="mt-10">
         <h2 className="text-2xl font-semibold">Skills</h2>
         <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-4">
@@ -37,7 +35,7 @@ function About() {
         </div>
       </section>
 
-      {/* Resume Section */}
+      
       <section className="mt-10">
         <h2 className="text-2xl font-semibold">Resume</h2>
         <p className="mt-2 text-gray-600">

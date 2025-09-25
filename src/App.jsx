@@ -1,10 +1,8 @@
-// src/App.jsx
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Nav from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-// Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -17,16 +15,16 @@ function App() {
       bg-gradient-to-br from-gray-100 via-indigo-100 to-purple-200 
       relative overflow-hidden">
 
-      {/* Subtle background blur circles */}
+      
       <div className="absolute top-[-10%] left-[-10%] w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
       <div className="absolute bottom-[-10%] right-[-10%] w-80 h-80 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
 
-      {/* Navbar */}
+     
       <div className="backdrop-blur-md bg-white/30 shadow-sm z-50 sticky top-0">
-        <Nav />
+        <Navbar />
       </div>
 
-      {/* Main Content */}
+   
       <main className="flex-grow z-10 px-4 md:px-8">
         <Routes>
           <Route path="/" element={<Home />} />
