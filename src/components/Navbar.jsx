@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between relative">
-      {/* Logo */}
+      
       <Link
         to="/"
         className="text-2xl font-extrabold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent tracking-tight"
@@ -23,7 +23,7 @@ function Navbar() {
         Ali Khan
       </Link>
 
-      {/* Desktop Links */}
+      
       <div className="hidden md:flex space-x-6">
         {navLinks.map((link) => (
           <NavLink
@@ -43,7 +43,7 @@ function Navbar() {
         ))}
       </div>
 
-      {/* Mobile Menu Button */}
+      
       <button
         className="md:hidden px-3 py-2 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold shadow-md hover:opacity-90 transition"
         onClick={() => setIsOpen(!isOpen)}
@@ -51,14 +51,14 @@ function Navbar() {
         {isOpen ? "✖" : "☰"}
       </button>
 
-      {/* Mobile Dropdown */}
+      
       {isOpen && (
         <div className="absolute top-16 right-6 w-48 backdrop-blur-md bg-white/90 rounded-xl shadow-lg border border-white/40 flex flex-col py-3 animate-fade-in">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
-              onClick={() => setIsOpen(false)} // close after click
+              onClick={() => setIsOpen(false)} 
               className={({ isActive }) =>
                 `px-4 py-2 rounded-md transition 
                 ${

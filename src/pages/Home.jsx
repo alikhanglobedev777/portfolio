@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import projects from "../data/projects";
@@ -8,9 +7,9 @@ import profilePic from "../assets/profile.jpeg";
 function Home() {
   return (
     <main className="max-w-7xl mx-auto px-6 md:px-12">
-      {/* Hero Section */}
+     
       <section className="grid md:grid-cols-2 gap-8 items-center min-h-screen">
-        {/* Left Content */}
+        
         <div>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
             Hi, I’m{" "}
@@ -27,19 +26,19 @@ function Home() {
             Passionate about crafting clean UIs and robust backends that scale.
           </p>
 
-          {/* CTA Buttons */}
+          
           <div className="mt-6 flex flex-wrap gap-4">
             <Link
               to="/projects"
               className="px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
             >
-              🚀 View Projects
+               View Projects
             </Link>
             <Link
               to="/contact"
               className="px-6 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold hover:bg-gray-100 shadow-sm transition-all duration-300"
             >
-              📩 Contact Me
+               Contact Me
             </Link>
           </div>
 
@@ -51,7 +50,7 @@ function Home() {
           </div>
         </div>
 
-        {/* Right Content: Profile */}
+       
         <div className="flex justify-center md:justify-end">
           <div className="relative w-64 h-64 md:w-80 md:h-80">
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-indigo-400 via-purple-400 to-pink-400 shadow-xl animate-pulse-slow"></div>
@@ -66,7 +65,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Featured Projects */}
+   
       <section className="mt-20 pb-12">
         <h2 className="text-3xl font-bold text-gray-900 border-b-4 border-indigo-600 inline-block pb-2">
           🌟 Featured Projects
@@ -85,7 +84,7 @@ function Home() {
   );
 }
 
-// Stat component
+
 function Stat({ label, value }) {
   return (
     <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg hover:scale-105 transition-all duration-300">

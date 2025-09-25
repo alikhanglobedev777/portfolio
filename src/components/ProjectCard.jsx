@@ -1,4 +1,3 @@
-// src/components/ProjectCard.jsx
 import React from "react";
 import { FiExternalLink } from "react-icons/fi";
 
@@ -8,7 +7,6 @@ function ProjectCard({ project }) {
       <h3 className="font-semibold text-lg">{project.title}</h3>
       <p className="mt-2 text-gray-600 text-sm">{project.description}</p>
 
-      {/* Tech tags */}
       <div className="mt-3 flex flex-wrap gap-2">
         {project.tech.map((t, i) => (
           <span
@@ -20,7 +18,7 @@ function ProjectCard({ project }) {
         ))}
       </div>
 
-      {/* Link */}
+   
       <a
         // href={project.link}
         target="_blank"
