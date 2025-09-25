@@ -1,4 +1,3 @@
-// src/data/blogs.js
 const blogs = [
   {
     id: 1,

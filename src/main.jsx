@@ -1,5 +1,4 @@
-// src/main.jsx
-import React from "react";   // 👈 THIS LINE IS REQUIRED
+import React from "react";   
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import router from "./router";
